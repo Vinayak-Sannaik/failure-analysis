@@ -12,7 +12,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 
 // Routes
-app.use('/api/records', recordRoutes);
+app.use('/', recordRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
