@@ -8,6 +8,9 @@ connectDB();
 
 app.use(express.json());
 
+// Set view engine
+app.set('view engine', 'ejs');
+
 // Routes
 app.use('/api/records', recordRoutes);
 
